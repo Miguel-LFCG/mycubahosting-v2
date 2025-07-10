@@ -148,13 +148,48 @@ export const translations = {
     readyToMakeADifference: "Prêt à faire la différence ?",
     helpUsBuildCommunity: "Aidez-nous à construire la meilleure communauté d'hébergement Minecraft ! Postulez dès aujourd'hui et devenez membre de notre équipe de support.",
     applyOnDiscord: "Postuler sur Discord",
-    communityBenefits: "Avantages pour la communauté",
+    importantInformation: "Informations Importantes",
+    communityBenefits: "Avantages pour la Communauté",
     communityBenefitsDescription: "Vous pouvez nous envoyer votre serveur Discord pour vérification ! Nous examinerons l'activité de votre communauté, le nombre de membres et l'engagement afin de potentiellement vous offrir de meilleures spécifications de serveur selon la taille de votre communauté et d'autres aspects.",
     autoSleepSystem: "Système d'Arrêt Automatique (Auto-Sleep)",
     autoSleepDescription: "L'arrêt automatique signifie que votre serveur s'éteint automatiquement lorsqu'aucun joueur n'est en ligne afin d'économiser des ressources et des coûts.",
     restartViaDiscord: "Redémarrez instantanément via le bot Discord lorsque des joueurs souhaitent rejoindre",
     scheduleServerStart: "Planifiez les horaires de démarrage du serveur via votre canal privé",
     perfectForModded: "Parfait pour les serveurs moddés avec une utilisation intermittente",
+
+    // Community Moderator Role
+    communityModeratorTitle: "Modérateur Communautaire",
+    communityModeratorCount: "1 Poste",
+    communityModeratorDescription: "Aidez à maintenir une communauté Discord positive et utile",
+    communityModeratorResponsibilities: [
+        "Surveiller les canaux communautaires pour des discussions utiles",
+        "Accueillir les nouveaux membres et les guider vers les ressources",
+        "Aider avec des questions générales et le support communautaire",
+        "Maintenir les règles de la communauté"
+    ],
+    communityModeratorRequirements: [
+        "Utilisateur actif de Discord avec de bonnes compétences en communication",
+        "Personnalité patiente et serviable",
+        "Expérience avec les serveurs Minecraft préférée",
+        "Disponible quelques heures par semaine"
+    ],
+
+    // Technical Support Role
+    technicalSupportTitle: "Support Technique",
+    technicalSupportCount: "2 Postes",
+    technicalSupportDescription: "Fournir une assistance technique aux propriétaires de serveurs",
+    technicalSupportResponsibilities: [
+        "Aider les clients à résoudre les problèmes de serveur",
+        "Assister avec l'installation de mods et plugins",
+        "Guider les utilisateurs dans la configuration des serveurs",
+        "Documenter les problèmes courants et leurs solutions"
+    ],
+    technicalSupportRequirements: [
+        "Solide connaissance des serveurs Minecraft",
+        "Expérience avec les plugins, mods ou administration de serveurs",
+        "Esprit de résolution de problèmes",
+        "Engagement à aider les membres de la communauté"
+    ],
     
     // Footer
     footerTagline: "Hébergement Premium de Serveur Minecraft",
