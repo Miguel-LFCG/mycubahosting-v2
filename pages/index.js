@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 import HeroSection from '@components/HeroSection';
+import OrderProcessSection from '@components/OrderProcessSection';
 import HowItWorksSection from '@components/HowItWorksSection';
 import SupportSection from '@components/SupportSection';
 import RecruitmentSection from '@components/RecruitmentSection';
@@ -32,6 +33,7 @@ export default function Home() {
         
         <main>
           <HeroSection />
+          <OrderProcessSection />
           <HowItWorksSection />
           <SupportSection />
           <RecruitmentSection />

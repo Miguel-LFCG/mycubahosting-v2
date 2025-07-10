@@ -1,27 +1,34 @@
-<!-- Minecraft-themed SVG favicon -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+<!-- Modern MyCuba Hosting SVG favicon -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <defs>
-    <pattern id="grassPattern" patternUnits="userSpaceOnUse" width="4" height="4">
-      <rect width="4" height="4" fill="#7CB342"/>
-      <rect width="2" height="2" fill="#689F38"/>
-      <rect x="2" y="2" width="2" height="2" fill="#689F38"/>
-    </pattern>
+    <linearGradient id="cubeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#50C878;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2A2A2A;stop-opacity:1" />
+    </linearGradient>
   </defs>
   
-  <!-- Grass block -->
-  <rect width="32" height="32" fill="#7CB342" stroke="#4A5D3A" stroke-width="2"/>
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGradient)" stroke="#50C878" stroke-width="2"/>
   
-  <!-- Grass top texture -->
-  <rect x="2" y="2" width="28" height="28" fill="url(#grassPattern)"/>
+  <!-- Main cube -->
+  <rect x="18" y="18" width="28" height="28" fill="url(#cubeGradient)" stroke="#2E7D32" stroke-width="1"/>
   
-  <!-- Highlight -->
-  <rect x="2" y="2" width="28" height="3" fill="#8BC34A" opacity="0.8"/>
-  <rect x="2" y="2" width="3" height="28" fill="#8BC34A" opacity="0.6"/>
+  <!-- Highlight on cube -->
+  <rect x="20" y="20" width="8" height="8" fill="#7FE57F" opacity="0.6"/>
   
-  <!-- Shadow -->
-  <rect x="27" y="2" width="3" height="28" fill="#2E7D32" opacity="0.8"/>
-  <rect x="2" y="27" width="28" height="3" fill="#2E7D32" opacity="0.8"/>
+  <!-- Server connection dots -->
+  <circle cx="12" cy="20" r="2" fill="#50C878"/>
+  <circle cx="52" cy="20" r="2" fill="#50C878"/>
+  <circle cx="12" cy="44" r="2" fill="#50C878"/>
+  <circle cx="52" cy="44" r="2" fill="#50C878"/>
   
-  <!-- Letter overlay -->
-  <text x="16" y="22" text-anchor="middle" fill="white" font-family="monospace" font-size="14" font-weight="bold">M</text>
+  <!-- Connection lines -->
+  <line x1="14" y1="20" x2="18" y2="24" stroke="#50C878" stroke-width="1" opacity="0.7"/>
+  <line x1="50" y1="20" x2="46" y2="24" stroke="#50C878" stroke-width="1" opacity="0.7"/>
+  <line x1="14" y1="44" x2="18" y2="40" stroke="#50C878" stroke-width="1" opacity="0.7"/>
+  <line x1="50" y1="44" x2="46" y2="40" stroke="#50C878" stroke-width="1" opacity="0.7"/>
 </svg>
