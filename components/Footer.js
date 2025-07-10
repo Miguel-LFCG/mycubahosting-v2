@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaDiscord, FaHeart } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -12,8 +13,14 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-minecraft-emerald pixel-border flex items-center justify-center text-white font-bold text-lg">
-              MC
+            <div className="w-12 h-12 bg-minecraft-emerald pixel-border flex items-center justify-center text-white font-bold text-lg p-1">
+              <Image
+                src="/favicon.svg"
+                alt="MyCuba Logo"
+                width={40}
+                height={40}
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <h3 className="text-xl font-bold font-minecraft">MyCuba Hosting</h3>

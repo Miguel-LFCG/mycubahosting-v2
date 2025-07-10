@@ -15,6 +15,7 @@ export default function Home() {
         <meta name="description" content="Simple, flexible Minecraft server hosting managed through Discord. Get 24/7 support, automatic backups, and custom server setups." />
         <meta name="keywords" content="minecraft server hosting, minecraft hosting, discord minecraft, server hosting, minecraft servers" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" />
         
         {/* Open Graph */}

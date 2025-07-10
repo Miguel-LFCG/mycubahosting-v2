@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaDiscord } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -14,8 +15,14 @@ export default function Header() {
           className="flex items-center space-x-3"
           whileHover={{ scale: 1.05 }}
         >
-          <div className="w-10 h-10 bg-minecraft-emerald pixel-border flex items-center justify-center text-white font-bold">
-            MC
+          <div className="w-10 h-10 bg-minecraft-emerald pixel-border flex items-center justify-center text-white font-bold p-1">
+            <Image
+              src="/favicon.svg"
+              alt="MyCuba Logo"
+              width={32}
+              height={32}
+              className="w-full h-full object-contain"
+            />
           </div>
           <h1 className="text-2xl font-bold text-white font-minecraft">
             MyCuba Hosting
