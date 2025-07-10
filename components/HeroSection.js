@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaDiscord, FaGamepad, FaServer, FaCube } from 'react-icons/fa';
+import { FaDiscord, FaGamepad, FaServer } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
@@ -30,8 +31,14 @@ export default function HeroSection() {
                 ease: "easeInOut"
               }}
             >
-              <div className="w-20 h-20 bg-gradient-to-br from-minecraft-emerald to-green-600 rounded-xl flex items-center justify-center text-white text-3xl font-bold shadow-2xl border border-minecraft-emerald/30">
-                <FaCube />
+              <div className="w-20 h-20 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center shadow-2xl border border-slate-600/30 p-2">
+                <Image
+                  src="/favicon.svg"
+                  alt="MyCuba Hosting Logo"
+                  width={60}
+                  height={60}
+                  className="w-full h-full object-contain"
+                />
               </div>
             </motion.div>
           </div>
