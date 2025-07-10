@@ -183,7 +183,7 @@ export default function RecruitmentSection() {
             </motion.a>
             
             <p className="text-xs text-gray-400 mt-4">
-              Volunteer positions • Build valuable experience • Support the community
+              Volunteer positions • Support the community
             </p>
           </div>
         </motion.div>

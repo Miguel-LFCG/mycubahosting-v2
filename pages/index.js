@@ -5,8 +5,6 @@ import Footer from '@components/Footer';
 import HeroSection from '@components/HeroSection';
 import OrderProcessSection from '@components/OrderProcessSection';
 import ServerSpecsSection from '@components/ServerSpecsSection';
-import HowItWorksSection from '@components/HowItWorksSection';
-import SupportSection from '@components/SupportSection';
 import RecruitmentSection from '@components/RecruitmentSection';
 
 export default function Home() {
@@ -36,8 +34,6 @@ export default function Home() {
           <HeroSection />
           <OrderProcessSection />
           <ServerSpecsSection />
-          <HowItWorksSection />
-          <SupportSection />
           <RecruitmentSection />
         </main>
 
