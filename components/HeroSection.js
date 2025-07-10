@@ -31,7 +31,7 @@ export default function HeroSection() {
                 ease: "easeInOut"
               }}
             >
-              <div className="w-20 h-20 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center shadow-2xl border border-slate-600/30 p-2">
+              <div className="w-20 h-20 bg-gradient-to-br from-slate-700/50 to-slate-800/50 rounded-xl flex items-center justify-center shadow-2xl border border-slate-600/10 p-2">
                 <Image
                   src="/favicon.svg"
                   alt="MyCuba Hosting Logo"
