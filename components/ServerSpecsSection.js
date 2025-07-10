@@ -10,6 +10,7 @@ import {
   FaRobot,
   FaDiscord
 } from 'react-icons/fa';
+import { useTranslation } from '@/hooks/useTranslation';
 
 const serverSpecs = [
   {
@@ -41,6 +42,37 @@ const serverSpecs = [
 ];
 
 export default function ServerSpecsSection() {
+  const { t } = useTranslation();
+  
+  const serverSpecs = [
+    {
+      type: "Vanilla Server",
+      subtitle: "Perfect for friends",
+      icon: FaServer,
+      specs: [
+        { icon: FaMemory, label: "RAM", value: "4-8GB" },
+        { icon: FaMicrochip, label: "CPU", value: "1-2 cores" },
+        { icon: FaShieldAlt, label: "Backups", value: "2 daily" },
+        { icon: FaClock, label: "Uptime", value: "24/7" }
+      ],
+      color: "minecraft-emerald",
+      bgGradient: "from-green-500/10 to-emerald-500/10"
+    },
+    {
+      type: "Modded Server",
+      subtitle: "For enhanced gameplay",
+      icon: FaUsers,
+      specs: [
+        { icon: FaMemory, label: "RAM", value: "4-12GB" },
+        { icon: FaMicrochip, label: "CPU", value: "1-2 cores" },
+        { icon: FaShieldAlt, label: "Backups", value: "2 daily" },
+        { icon: FaClock, label: "Uptime", value: "Auto-sleep" }
+      ],
+      color: "blue-500",
+      bgGradient: "from-blue-500/10 to-purple-500/10"
+    }
+  ];
+  
   return (
     <section className="py-20 bg-gradient-to-br from-gray-900 to-slate-900">
       <div className="container mx-auto px-4">
@@ -51,10 +83,10 @@ export default function ServerSpecsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Server Specifications
+            {t('serverSpecsTitle')}
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            What you can expect from your MyCuba hosting experience
+            {t('serverSpecsSubtitle')}
           </p>
         </motion.div>
         

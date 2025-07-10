@@ -6,41 +6,43 @@ import {
   FaServer, 
   FaPlay
 } from 'react-icons/fa';
-
-const orderSteps = [
-  {
-    icon: FaDiscord,
-    title: "Join & Order",
-    description: "Join our Discord and use /order to get started",
-    detail: "Simple command-based ordering system"
-  },
-  {
-    icon: FaComments,
-    title: "Provide Details",
-    description: "Tell us your server name, Minecraft version, and setup preferences",
-    detail: "We support all versions and modpacks"
-  },
-  {
-    icon: FaCog,
-    title: "Private Channel",
-    description: "Get your own dedicated Discord channel for direct support",
-    detail: "Personal assistance every step of the way"
-  },
-  {
-    icon: FaServer,
-    title: "Server Setup",
-    description: "We configure your server with your exact specifications",
-    detail: "Custom plugins, mods, and optimizations included"
-  },
-  {
-    icon: FaPlay,
-    title: "Ready to Play",
-    description: "Your server is live and ready for your community",
-    detail: "Full support and monitoring included"
-  }
-];
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function OrderProcessSection() {
+  const { t } = useTranslation();
+  
+  const orderSteps = [
+    {
+      icon: FaDiscord,
+      title: t('orderStep1Title'),
+      description: t('orderStep1Description'),
+      detail: "Simple command-based ordering system"
+    },
+    {
+      icon: FaComments,
+      title: t('orderStep2Title'),
+      description: t('orderStep2Description'),
+      detail: "We support all versions and modpacks"
+    },
+    {
+      icon: FaCog,
+      title: t('orderStep3Title'),
+      description: t('orderStep3Description'),
+      detail: "Personal assistance every step of the way"
+    },
+    {
+      icon: FaServer,
+      title: "Server Setup",
+      description: "We configure your server with your exact specifications",
+      detail: "Custom plugins, mods, and optimizations included"
+    },
+    {
+      icon: FaPlay,
+      title: t('orderStep4Title'),
+      description: t('orderStep4Description'),
+      detail: "Full support and monitoring included"
+    }
+  ];
   return (
     <section id="order-process" className="py-20 bg-gradient-to-br from-slate-800 to-gray-900">
       <div className="container mx-auto px-4">
@@ -51,10 +53,10 @@ export default function OrderProcessSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Order Process
+            {t('orderProcessTitle')}
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Getting your Minecraft server is simple and straightforward
+            {t('orderProcessSubtitle')}
           </p>
         </motion.div>
         
@@ -107,7 +109,7 @@ export default function OrderProcessSection() {
           className="text-center mt-16"
         >
           <motion.a
-            href="https://discord.gg/your-invite-link"
+            href="https://discord.gg/7QEvxcBvBK"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-minecraft-emerald to-green-600 hover:from-green-500 hover:to-green-700 text-white px-8 py-4 rounded-xl inline-flex items-center space-x-3 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -115,7 +117,7 @@ export default function OrderProcessSection() {
             whileTap={{ scale: 0.98 }}
           >
             <FaDiscord className="w-6 h-6" />
-            <span>Start Your Order Today</span>
+            <span>{t('startOrderToday')}</span>
           </motion.a>
         </motion.div>
       </div>

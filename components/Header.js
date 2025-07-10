@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
 import { FaDiscord } from 'react-icons/fa';
 import Image from 'next/image';
+import LanguageSwitch from './LanguageSwitch';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Header() {
+  const { t } = useTranslation();
+  
   return (
     <motion.header 
       initial={{ opacity: 0, y: -50 }}
@@ -29,17 +33,21 @@ export default function Header() {
           </h1>
         </motion.div>
         
-        <motion.a
-          href="https://discord.gg/your-invite-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="minecraft-button flex items-center space-x-2 text-sm"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <FaDiscord className="w-5 h-5" />
-          <span>Join Discord</span>
-        </motion.a>
+        <div className="flex items-center space-x-4">
+          <LanguageSwitch />
+          
+          <motion.a
+            href="https://discord.gg/7QEvxcBvBK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="minecraft-button flex items-center space-x-2 text-sm"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaDiscord className="w-5 h-5" />
+            <span>{t('joinDiscord')}</span>
+          </motion.a>
+        </div>
       </div>
     </motion.header>
   );

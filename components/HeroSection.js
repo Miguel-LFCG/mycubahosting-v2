@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import { FaDiscord, FaGamepad, FaServer } from 'react-icons/fa';
 import Image from 'next/image';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function HeroSection() {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800">
       {/* Subtle Background Elements */}
@@ -49,7 +52,7 @@ export default function HeroSection() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            MyCuba Hosting
+            {t('heroTitle')}
           </motion.h1>
           
           <motion.p
@@ -58,7 +61,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
           >
-            Simple, flexible Minecraft server hosting — now fully managed through Discord.
+            {t('heroSubtitle')}
           </motion.p>
         </motion.div>
         
@@ -69,7 +72,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.1 }}
         >
           <motion.a
-            href="https://discord.gg/your-invite-link"
+            href="https://discord.gg/7QEvxcBvBK"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-minecraft-emerald to-green-600 hover:from-green-500 hover:to-green-700 text-white px-8 py-4 rounded-xl flex items-center space-x-3 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -77,7 +80,7 @@ export default function HeroSection() {
             whileTap={{ scale: 0.98 }}
           >
             <FaDiscord className="w-6 h-6" />
-            <span>Join our Discord</span>
+            <span>{t('joinOurDiscord')}</span>
           </motion.a>
           
           <motion.button
@@ -89,7 +92,7 @@ export default function HeroSection() {
             }}
           >
             <FaGamepad className="w-6 h-6" />
-            <span>Get Started</span>
+            <span>{t('getStarted')}</span>
           </motion.button>
         </motion.div>
       </div>

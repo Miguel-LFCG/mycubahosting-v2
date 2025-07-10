@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import { FaDiscord, FaHeart } from 'react-icons/fa';
 import Image from 'next/image';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Footer() {
+  const { t } = useTranslation();
+  
   return (
     <motion.footer 
       initial={{ opacity: 0 }}
@@ -24,20 +27,20 @@ export default function Footer() {
             </div>
             <div>
               <h3 className="text-xl font-bold font-minecraft">MyCuba Hosting</h3>
-              <p className="text-gray-400 text-sm">Minecraft Server Hosting Made Simple</p>
+              <p className="text-gray-400 text-sm">{t('footerTagline')}</p>
             </div>
           </div>
           
           <div className="flex items-center space-x-6">
             <motion.a
-              href="https://discord.gg/your-invite-link"
+              href="https://discord.gg/7QEvxcBvBK"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-minecraft-emerald hover:text-green-400 transition-colors"
               whileHover={{ scale: 1.1 }}
             >
               <FaDiscord className="w-6 h-6" />
-              <span>Discord Support</span>
+              <span>{t('support')}</span>
             </motion.a>
           </div>
         </div>

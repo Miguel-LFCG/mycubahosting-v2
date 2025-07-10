@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaDiscord, FaUserShield, FaCrown, FaUsers, FaHandshake } from 'react-icons/fa';
+import { useTranslation } from '@/hooks/useTranslation';
 
 const positions = [
   {
@@ -43,6 +44,49 @@ const positions = [
 ];
 
 export default function RecruitmentSection() {
+  const { t } = useTranslation();
+  
+  const positions = [
+    {
+      icon: FaUserShield,
+      title: "Community Moderator",
+      count: "1 Position",
+      description: "Help maintain a positive and helpful Discord community",
+      responsibilities: [
+        "Monitor community channels for helpful discussions",
+        "Welcome new members and guide them to resources",
+        "Assist with general questions and community support",
+        "Help maintain community guidelines"
+      ],
+      requirements: [
+        "Active Discord user with good communication skills",
+        "Patient and helpful personality",
+        "Experience with Minecraft servers preferred",
+        "Available for a few hours weekly"
+      ],
+      color: "minecraft-emerald"
+    },
+    {
+      icon: FaCrown,
+      title: "Technical Support Volunteer",
+      count: "2 Positions",
+      description: "Provide technical assistance to server owners",
+      responsibilities: [
+        "Help clients troubleshoot server issues",
+        "Assist with mod and plugin installations",
+        "Guide users through server configuration",
+        "Document common issues and solutions"
+      ],
+      requirements: [
+        "Strong knowledge of Minecraft servers",
+        "Experience with plugins, mods, or server administration",
+        "Problem-solving mindset",
+        "Commitment to helping community members"
+      ],
+      color: "blue-500"
+    }
+  ];
+  
   return (
     <section className="py-20 bg-gradient-to-br from-gray-800 to-slate-900">
       <div className="container mx-auto px-4">
@@ -54,10 +98,10 @@ export default function RecruitmentSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Join Our Team
+            {t('recruitmentTitle')}
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            We're looking for passionate individuals to help us support the Minecraft community
+            {t('recruitmentSubtitle')}
           </p>
         </motion.div>
         
@@ -171,7 +215,7 @@ export default function RecruitmentSection() {
             </p>
             
             <motion.a
-              href="https://discord.gg/your-invite-link"
+              href="https://discord.gg/7QEvxcBvBK"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-minecraft-emerald to-green-600 hover:from-green-500 hover:to-green-700 text-white px-8 py-4 rounded-xl inline-flex items-center space-x-3 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"

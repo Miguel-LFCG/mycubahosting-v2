@@ -6,21 +6,24 @@ import HeroSection from '@components/HeroSection';
 import OrderProcessSection from '@components/OrderProcessSection';
 import ServerSpecsSection from '@components/ServerSpecsSection';
 import RecruitmentSection from '@components/RecruitmentSection';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Home() {
+  const { t } = useTranslation();
+  
   return (
     <>
       <Head>
-        <title>MyCuba Hosting - Premium Minecraft Server Hosting</title>
-        <meta name="description" content="Simple, flexible Minecraft server hosting managed through Discord. Get 24/7 support, automatic backups, and custom server setups." />
-        <meta name="keywords" content="minecraft server hosting, minecraft hosting, discord minecraft, server hosting, minecraft servers" />
+        <title>{t('metaTitle')}</title>
+        <meta name="description" content={t('metaDescription')} />
+        <meta name="keywords" content={t('metaKeywords')} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="MyCuba Hosting - Premium Minecraft Server Hosting" />
-        <meta property="og:description" content="Simple, flexible Minecraft server hosting managed through Discord" />
+        <meta property="og:title" content={t('metaTitle')} />
+        <meta property="og:description" content={t('metaDescription')} />
         <meta property="og:type" content="website" />
         
         {/* Additional Meta */}
