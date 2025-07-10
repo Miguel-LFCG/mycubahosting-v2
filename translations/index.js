@@ -15,15 +15,23 @@ export const translations = {
     
     orderStep1Title: "Join Discord",
     orderStep1Description: "Connect with our community and access our ordering system",
+    orderStep1Detail: "Simple command-based ordering system",
     
     orderStep2Title: "Submit Order",
     orderStep2Description: "Tell us your requirements and preferences",
+    orderStep2Detail: "We support all versions and modpacks",
     
     orderStep3Title: "Quick Setup",
     orderStep3Description: "We'll have your server ready in no time",
+    orderStep3Detail: "Personal assistance every step of the way",
     
-    orderStep4Title: "Start Playing",
-    orderStep4Description: "Your server is ready - invite friends and play!",
+    orderStep4Title: "Server Setup",
+    orderStep4Description: "We configure your server with your exact specifications",
+    orderStep4Detail: "Custom plugins, mods, and optimizations included",
+    
+    orderStep5Title: "Start Playing",
+    orderStep5Description: "Your server is ready - invite friends and play!",
+    orderStep5Detail: "Full support and monitoring included",
     
     startOrderToday: "Start Your Order Today",
     
@@ -47,6 +55,19 @@ export const translations = {
     recruitmentTitle: "Join Our Team",
     recruitmentSubtitle: "Help us build the future of Minecraft hosting",
     recruitmentDescription: "We're always looking for passionate individuals to join our team. Whether you're a developer, system administrator, or community manager, we'd love to hear from you!",
+    volunteerOpportunitiesTitle: "Volunteer Opportunities Available",
+    volunteerOpportunitiesDescription: "These are volunteer positions perfect for gaining experience in community management and technical support",
+    volunteerOpportunitiesFooter: "Great way to contribute to the Minecraft community while building valuable skills",
+    
+    // Job positions
+    communityModeratorTitle: "Community Moderator",
+    communityModeratorCount: "1 Position",
+    communityModeratorDescription: "Help maintain a positive and helpful Discord community",
+    
+    technicalSupportTitle: "Technical Support Volunteer",
+    technicalSupportCount: "2 Positions", 
+    technicalSupportDescription: "Provide technical assistance to server owners",
+    
     applyNow: "Apply Now",
     
     // Footer
@@ -79,15 +100,23 @@ export const translations = {
     
     orderStep1Title: "Rejoindre Discord",
     orderStep1Description: "Connectez-vous à notre communauté et accédez à notre système de commande",
+    orderStep1Detail: "Système de commande simple basé sur des commandes",
     
     orderStep2Title: "Soumettre la Commande",
     orderStep2Description: "Dites-nous vos exigences et préférences",
+    orderStep2Detail: "Nous supportons toutes les versions et modpacks",
     
     orderStep3Title: "Configuration Rapide",
     orderStep3Description: "Nous préparerons votre serveur en un rien de temps",
+    orderStep3Detail: "Assistance personnelle à chaque étape",
     
-    orderStep4Title: "Commencer à Jouer",
-    orderStep4Description: "Votre serveur est prêt - invitez des amis et jouez !",
+    orderStep4Title: "Configuration du Serveur",
+    orderStep4Description: "Nous configurons votre serveur selon vos spécifications exactes",
+    orderStep4Detail: "Plugins personnalisés, mods et optimisations inclus",
+    
+    orderStep5Title: "Commencer à Jouer",
+    orderStep5Description: "Votre serveur est prêt - invitez des amis et jouez !",
+    orderStep5Detail: "Support complet et surveillance inclus",
     
     startOrderToday: "Commandez Aujourd'hui",
     
@@ -111,7 +140,21 @@ export const translations = {
     recruitmentTitle: "Rejoignez Notre Équipe",
     recruitmentSubtitle: "Aidez-nous à construire l'avenir de l'hébergement Minecraft",
     recruitmentDescription: "Nous recherchons toujours des personnes passionnées pour rejoindre notre équipe. Que vous soyez développeur, administrateur système ou gestionnaire de communauté, nous aimerions vous entendre !",
-    applyNow: "Postuler Maintenant",
+    volunteerOpportunitiesTitle: "Opportunités de Bénévolat Disponibles",
+    volunteerOpportunitiesDescription: "Ce sont des postes de bénévolat parfaits pour acquérir de l'expérience dans la gestion de communauté et le support technique",
+    volunteerOpportunitiesFooter: "Excellente façon de contribuer à la communauté Minecraft tout en développant des compétences précieuses",
+
+    // Ajout des traductions manquantes
+    readyToMakeADifference: "Prêt à faire la différence ?",
+    helpUsBuildCommunity: "Aidez-nous à construire la meilleure communauté d'hébergement Minecraft ! Postulez dès aujourd'hui et devenez membre de notre équipe de support.",
+    applyOnDiscord: "Postuler sur Discord",
+    communityBenefits: "Avantages pour la communauté",
+    communityBenefitsDescription: "Vous pouvez nous envoyer votre serveur Discord pour vérification ! Nous examinerons l'activité de votre communauté, le nombre de membres et l'engagement afin de potentiellement vous offrir de meilleures spécifications de serveur selon la taille de votre communauté et d'autres aspects.",
+    autoSleepSystem: "Système d'Arrêt Automatique (Auto-Sleep)",
+    autoSleepDescription: "L'arrêt automatique signifie que votre serveur s'éteint automatiquement lorsqu'aucun joueur n'est en ligne afin d'économiser des ressources et des coûts.",
+    restartViaDiscord: "Redémarrez instantanément via le bot Discord lorsque des joueurs souhaitent rejoindre",
+    scheduleServerStart: "Planifiez les horaires de démarrage du serveur via votre canal privé",
+    perfectForModded: "Parfait pour les serveurs moddés avec une utilisation intermittente",
     
     // Footer
     footerTagline: "Hébergement Premium de Serveur Minecraft",

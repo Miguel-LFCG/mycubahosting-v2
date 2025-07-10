@@ -16,31 +16,31 @@ export default function OrderProcessSection() {
       icon: FaDiscord,
       title: t('orderStep1Title'),
       description: t('orderStep1Description'),
-      detail: "Simple command-based ordering system"
+      detail: t('orderStep1Detail')
     },
     {
       icon: FaComments,
       title: t('orderStep2Title'),
       description: t('orderStep2Description'),
-      detail: "We support all versions and modpacks"
+      detail: t('orderStep2Detail')
     },
     {
       icon: FaCog,
       title: t('orderStep3Title'),
       description: t('orderStep3Description'),
-      detail: "Personal assistance every step of the way"
+      detail: t('orderStep3Detail')
     },
     {
       icon: FaServer,
-      title: "Server Setup",
-      description: "We configure your server with your exact specifications",
-      detail: "Custom plugins, mods, and optimizations included"
+      title: t('orderStep4Title'),
+      description: t('orderStep4Description'),
+      detail: t('orderStep4Detail')
     },
     {
       icon: FaPlay,
-      title: t('orderStep4Title'),
-      description: t('orderStep4Description'),
-      detail: "Full support and monitoring included"
+      title: t('orderStep5Title'),
+      description: t('orderStep5Description'),
+      detail: t('orderStep5Detail')
     }
   ];
   return (

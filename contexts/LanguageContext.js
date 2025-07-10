@@ -12,19 +12,23 @@ export const useLanguage = () => {
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('en');
+  const [isClient, setIsClient] = useState(false);
 
   // Load language from localStorage on mount
   useEffect(() => {
+    setIsClient(true);
     const savedLanguage = localStorage.getItem('mycuba-language');
     if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'fr')) {
       setLanguage(savedLanguage);
     }
   }, []);
 
-  // Save language to localStorage when it changes
+  // Save language to localStorage when it changes (only on client)
   useEffect(() => {
-    localStorage.setItem('mycuba-language', language);
-  }, [language]);
+    if (isClient) {
+      localStorage.setItem('mycuba-language', language);
+    }
+  }, [language, isClient]);
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'en' ? 'fr' : 'en');
@@ -35,7 +39,8 @@ export const LanguageProvider = ({ children }) => {
     setLanguage,
     toggleLanguage,
     isEnglish: language === 'en',
-    isFrench: language === 'fr'
+    isFrench: language === 'fr',
+    isClient
   };
 
   return (

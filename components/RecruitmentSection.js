@@ -49,9 +49,9 @@ export default function RecruitmentSection() {
   const positions = [
     {
       icon: FaUserShield,
-      title: "Community Moderator",
-      count: "1 Position",
-      description: "Help maintain a positive and helpful Discord community",
+      title: t('communityModeratorTitle'),
+      count: t('communityModeratorCount'),
+      description: t('communityModeratorDescription'),
       responsibilities: [
         "Monitor community channels for helpful discussions",
         "Welcome new members and guide them to resources",
@@ -68,9 +68,9 @@ export default function RecruitmentSection() {
     },
     {
       icon: FaCrown,
-      title: "Technical Support Volunteer",
-      count: "2 Positions",
-      description: "Provide technical assistance to server owners",
+      title: t('technicalSupportTitle'),
+      count: t('technicalSupportCount'),
+      description: t('technicalSupportDescription'),
       responsibilities: [
         "Help clients troubleshoot server issues",
         "Assist with mod and plugin installations",
@@ -118,13 +118,13 @@ export default function RecruitmentSection() {
             </div>
           </div>
           <h3 className="text-2xl font-bold text-white mb-3">
-            Volunteer Opportunities Available
+            {t('volunteerOpportunitiesTitle')}
           </h3>
           <p className="text-gray-300 mb-2">
-            These are <strong>volunteer positions</strong> perfect for gaining experience in community management and technical support
+            {t('volunteerOpportunitiesDescription')}
           </p>
           <p className="text-sm text-gray-400">
-            Great way to contribute to the Minecraft community while building valuable skills
+            {t('volunteerOpportunitiesFooter')}
           </p>
         </motion.div>
         
