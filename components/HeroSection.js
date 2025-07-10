@@ -6,33 +6,6 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800">
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 z-0">
-        {/* Reduced floating elements */}
-        <motion.div
-          className="absolute top-20 left-10 w-12 h-12 bg-minecraft-emerald/20 backdrop-blur-sm border border-minecraft-emerald/30 rounded-lg"
-          animate={{ 
-            y: [0, -10, 0],
-            opacity: [0.3, 0.6, 0.3]
-          }}
-          transition={{ 
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        <motion.div
-          className="absolute bottom-32 right-20 w-16 h-16 bg-blue-500/20 backdrop-blur-sm border border-blue-500/30 rounded-lg"
-          animate={{ 
-            y: [0, -15, 0],
-            opacity: [0.2, 0.5, 0.2]
-          }}
-          transition={{ 
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
-          }}
-        />
-        
         {/* Modern gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       </div>
@@ -112,39 +85,7 @@ export default function HeroSection() {
             <span>Get Started</span>
           </motion.button>
         </motion.div>
-        
-        {/* Stats */}
-        <motion.div
-          className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.3 }}
-        >
-          <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-            <div className="text-3xl font-bold text-minecraft-emerald mb-2">24/7</div>
-            <div className="text-gray-300 text-sm">Server Uptime</div>
-          </div>
-          <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-            <div className="text-3xl font-bold text-blue-400 mb-2">∞</div>
-            <div className="text-gray-300 text-sm">Backup Storage</div>
-          </div>
-          <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-            <div className="text-3xl font-bold text-yellow-400 mb-2">1-Click</div>
-            <div className="text-gray-300 text-sm">Setup Process</div>
-          </div>
-        </motion.div>
       </div>
-      
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <div className="w-8 h-12 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2" />
-        </div>
-      </motion.div>
     </section>
   );
 }
