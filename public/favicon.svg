@@ -1,0 +1,27 @@
+<!-- Minecraft-themed SVG favicon -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <pattern id="grassPattern" patternUnits="userSpaceOnUse" width="4" height="4">
+      <rect width="4" height="4" fill="#7CB342"/>
+      <rect width="2" height="2" fill="#689F38"/>
+      <rect x="2" y="2" width="2" height="2" fill="#689F38"/>
+    </pattern>
+  </defs>
+  
+  <!-- Grass block -->
+  <rect width="32" height="32" fill="#7CB342" stroke="#4A5D3A" stroke-width="2"/>
+  
+  <!-- Grass top texture -->
+  <rect x="2" y="2" width="28" height="28" fill="url(#grassPattern)"/>
+  
+  <!-- Highlight -->
+  <rect x="2" y="2" width="28" height="3" fill="#8BC34A" opacity="0.8"/>
+  <rect x="2" y="2" width="3" height="28" fill="#8BC34A" opacity="0.6"/>
+  
+  <!-- Shadow -->
+  <rect x="27" y="2" width="3" height="28" fill="#2E7D32" opacity="0.8"/>
+  <rect x="2" y="27" width="28" height="3" fill="#2E7D32" opacity="0.8"/>
+  
+  <!-- Letter overlay -->
+  <text x="16" y="22" text-anchor="middle" fill="white" font-family="monospace" font-size="14" font-weight="bold">M</text>
+</svg>
