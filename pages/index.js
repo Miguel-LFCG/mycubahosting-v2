@@ -4,6 +4,7 @@ import Header from '@components/Header';
 import Footer from '@components/Footer';
 import HeroSection from '@components/HeroSection';
 import OrderProcessSection from '@components/OrderProcessSection';
+import PricingPlansSection from '@components/PricingPlansSection';
 import ServerSpecsSection from '@components/ServerSpecsSection';
 import RecruitmentSection from '@components/RecruitmentSection';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -37,6 +38,7 @@ export default function Home() {
         <main>
           <HeroSection />
           <OrderProcessSection />
+          <PricingPlansSection />
           <ServerSpecsSection />
           <RecruitmentSection />
         </main>

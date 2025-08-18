@@ -80,6 +80,27 @@ export const translations = {
     
   // Removed page-specific keys for premade/our servers
     
+  // Plans section
+  plansTitle: "Plans",
+  plansSubtitle: "Two simple options depending on your needs",
+  groupPlanName: "Friends & Small Groups",
+  groupPlanSubtitle: "Perfect for individuals or a group of friends playing together",
+  groupPlanCores: "From 1 vCPU core",
+  groupPlanRam: "From 4 GB RAM",
+  groupFeatureSSD: "NVMe SSD storage",
+  groupFeatureDDoS: "DDoS protection included",
+  groupFeatureUpgrade: "Easy upgrades as you grow",
+  communityPlanName: "Community Servers",
+  communityPlanSubtitle: "For active communities with a public Discord server",
+  communityPlanCores: "Starting at 3 vCPU cores",
+  communityPlanRam: "Starting at 10 GB RAM",
+  communityPlanScales: "Resources scale with community size",
+  communityFeaturePriority: "Priority support",
+  communityFeatureCustomSetup: "Custom tuning and setup",
+  communityRequirement: "Requirement: Active Discord server with at least 30 members.",
+  orderOnDiscord: "Order on Discord",
+  plansDisclaimer: "Specs shown are starting points. Final specs are confirmed during the order on Discord.",
+    
     // Meta tags
     metaTitle: "MyCuba Hosting - Premium Minecraft Server Hosting",
     metaDescription: "Simple, flexible Minecraft server hosting managed through Discord. Get 24/7 support, automatic backups, and custom server setups.",
@@ -202,6 +223,27 @@ export const translations = {
     documentation: "Documentation",
     
   // Removed page-specific keys for premade/our servers
+    
+  // Plans section
+  plansTitle: "Offres",
+  plansSubtitle: "Deux options simples selon vos besoins",
+  groupPlanName: "Amis & Petits Groupes",
+  groupPlanSubtitle: "Parfait pour une personne ou un groupe d'amis",
+  groupPlanCores: "À partir de 1 cœur vCPU",
+  groupPlanRam: "À partir de 4 Go de RAM",
+  groupFeatureSSD: "Stockage NVMe SSD",
+  groupFeatureDDoS: "Protection DDoS incluse",
+  groupFeatureUpgrade: "Mises à niveau faciles selon vos besoins",
+  communityPlanName: "Serveurs Communautaires",
+  communityPlanSubtitle: "Pour les communautés actives avec un serveur Discord public",
+  communityPlanCores: "À partir de 3 cœurs vCPU",
+  communityPlanRam: "À partir de 10 Go de RAM",
+  communityPlanScales: "Ressources qui évoluent avec la taille de la communauté",
+  communityFeaturePriority: "Support prioritaire",
+  communityFeatureCustomSetup: "Optimisation et configuration sur mesure",
+  communityRequirement: "Exigence : Serveur Discord actif avec au moins 30 membres.",
+  orderOnDiscord: "Commander sur Discord",
+  plansDisclaimer: "Les spécifications indiquées sont des points de départ. Les spécifications finales sont confirmées lors de la commande sur Discord.",
     
     // Meta tags
     metaTitle: "MyCuba Hosting - Hébergement Premium de Serveur Minecraft",
