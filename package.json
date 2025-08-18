@@ -2,13 +2,16 @@
   "name": "next-netlify-starter",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.4.0",
+  "next": "10.2.3",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }

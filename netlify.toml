@@ -1,0 +1,14 @@
+# Netlify configuration for Next.js v10
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "16"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Optional: Lighthouse plugin (already enabled in UI)
+# [[plugins]]
+#   package = "@netlify/plugin-lighthouse"
