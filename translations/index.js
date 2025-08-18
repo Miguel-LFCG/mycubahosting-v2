@@ -1,10 +1,7 @@
 export const translations = {
   en: {
-    // Header
-    home: "Home",
-    premadeServers: "Premade Servers",
-    ourServers: "Our Servers",
-    joinDiscord: "Join Discord",
+  // Header
+  joinDiscord: "Join Discord",
     
     // Hero Section
     heroTitle: "MyCuba Hosting",
@@ -81,27 +78,7 @@ export const translations = {
     support: "Support",
     documentation: "Documentation",
     
-    // Premade Servers Page
-    premadeServersTitle: "Premade Servers",
-    premadeServersSubtitle: "Ready-to-use server configurations that can be installed quickly",
-    searchPlaceholder: "Search for servers...",
-    noServersFound: "No servers found matching your search.",
-    showMore: "Show More",
-    showLess: "Show Less",
-    installServer: "Install Server",
-    serverVersion: "Version",
-    serverPlayers: "Max Players",
-    serverMods: "Mods",
-    serverDescription: "Description",
-    
-    // Our Servers Page
-    ourServersTitle: "Our Servers",
-    ourServersSubtitle: "All servers hosted by our hosting service with community links",
-    joinDiscordServer: "Join Discord",
-    serverOwner: "Owner",
-    serverMembers: "Members",
-    serverType: "Type",
-    visitServer: "Visit Server",
+  // Removed page-specific keys for premade/our servers
     
     // Meta tags
     metaTitle: "MyCuba Hosting - Premium Minecraft Server Hosting",
@@ -110,11 +87,8 @@ export const translations = {
   },
   
   fr: {
-    // Header
-    home: "Accueil",
-    premadeServers: "Serveurs Préfaits",
-    ourServers: "Nos Serveurs",
-    joinDiscord: "Rejoindre Discord",
+  // Header
+  joinDiscord: "Rejoindre Discord",
     
     // Hero Section
     heroTitle: "MyCuba Hosting",
@@ -227,27 +201,7 @@ export const translations = {
     support: "Support",
     documentation: "Documentation",
     
-    // Premade Servers Page
-    premadeServersTitle: "Serveurs Préfaits",
-    premadeServersSubtitle: "Configurations de serveur prêtes à l'emploi qui peuvent être installées rapidement",
-    searchPlaceholder: "Rechercher des serveurs...",
-    noServersFound: "Aucun serveur trouvé correspondant à votre recherche.",
-    showMore: "Voir Plus",
-    showLess: "Voir Moins",
-    installServer: "Installer le Serveur",
-    serverVersion: "Version",
-    serverPlayers: "Joueurs Max",
-    serverMods: "Mods",
-    serverDescription: "Description",
-    
-    // Our Servers Page
-    ourServersTitle: "Nos Serveurs",
-    ourServersSubtitle: "Tous les serveurs hébergés par notre service d'hébergement avec liens communautaires",
-    joinDiscordServer: "Rejoindre Discord",
-    serverOwner: "Propriétaire",
-    serverMembers: "Membres",
-    serverType: "Type",
-    visitServer: "Visiter le Serveur",
+  // Removed page-specific keys for premade/our servers
     
     // Meta tags
     metaTitle: "MyCuba Hosting - Hébergement Premium de Serveur Minecraft",
